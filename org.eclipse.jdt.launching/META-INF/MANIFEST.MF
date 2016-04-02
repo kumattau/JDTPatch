@@ -1,0 +1,481 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.eclipse.jdt.launching; singleton:=true
+Archiver-Version: Plexus Archiver
+Built-By: e4Build
+Require-Bundle: org.eclipse.core.resources;bundle-version="[3.5.0,4.0.
+ 0)",org.eclipse.jdt.core;bundle-version="[3.8.0,4.0.0)",org.eclipse.d
+ ebug.core;bundle-version="[3.9.0,4.0.0)",org.eclipse.jdt.debug;bundle
+ -version="[3.7.100,4.0.0)",org.eclipse.core.variables;bundle-version=
+ "[3.2.0,4.0.0)",org.eclipse.core.runtime;bundle-version="[3.11.0,4.0.
+ 0)",org.eclipse.osgi;bundle-version="[3.8.0,4.0.0)",org.eclipse.core.
+ expressions;bundle-version="[3.4.0,4.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/jdt/ec
+ lipse.jdt.debug.git;path="org.eclipse.jdt.launching";tag="I20150527-2
+ 010";commitId=bf59312babe8fc1bbe88241adad15e001ca8cb6d
+Bundle-Vendor: %providerName
+Import-Package: com.ibm.icu.text
+Export-Package: org.eclipse.jdt.internal.launching;x-friends:="org.ecl
+ ipse.jdt.debug.ui,org.eclipse.jdt.launching.macosx",org.eclipse.jdt.i
+ nternal.launching.environments;x-internal:=true,org.eclipse.jdt.launc
+ hing,org.eclipse.jdt.launching.environments,org.eclipse.jdt.launching
+ .sourcelookup,org.eclipse.jdt.launching.sourcelookup.containers
+Bundle-Name: %pluginName
+Bundle-Version: 3.8.0.v20150527-0946
+Bundle-Localization: plugin
+Bundle-Activator: org.eclipse.jdt.internal.launching.LaunchingPlugin
+Created-By: Apache Maven 3.1.1
+Build-Jdk: 1.8.0_40
+
+Name: plugin.xml
+SHA-256-Digest: AI2zGBxYc/8Wt86GwxMKkpsrtRlSo9EWWSxgHzEUhD4=
+
+Name: org/eclipse/jdt/internal/launching/environments/ExecutionEnviron
+ ment.class
+SHA-256-Digest: rPT10N+5uhuEEHbwovGwRLFTXTyTvx/A8H3R07QStBY=
+
+Name: org/eclipse/jdt/internal/launching/JavaRemoteApplicationLaunchCo
+ nfigurationDelegate.class
+SHA-256-Digest: KuD2q46srJskjORMkPa3D3zVzniEUzl0MtE8id0LV80=
+
+Name: org/eclipse/jdt/internal/launching/DefaultProjectClasspathEntry.
+ class
+SHA-256-Digest: ohfnBLcJUdGOGXVREiYwZWYv5Tz88eIkGLLM1/R3cvI=
+
+Name: org/eclipse/jdt/internal/launching/AbstractRuntimeClasspathEntry
+ .class
+SHA-256-Digest: 3ls37eaRgqnTtNghfaiCATbKHcu7Pl4ZlJIt19HdRII=
+
+Name: org/eclipse/jdt/internal/launching/PackageFragmentRootSourceCont
+ ainerTypeDelegate.class
+SHA-256-Digest: 1ricr0syF3Dx8AjlBPjscRfYp3mGJmF4ADI6jB//iiw=
+
+Name: org/eclipse/jdt/launching/environments/IExecutionEnvironment.cla
+ ss
+SHA-256-Digest: XKSGJ5ZfKOH1OLgOdotRlCokkURZO7JcmpCMTkcX6cM=
+
+Name: org/eclipse/jdt/internal/launching/Standard11xVMType.class
+SHA-256-Digest: 9BPUGAJVx6qwdxZdUmHHIBuVxr+06GEjVOC+nxtRFO8=
+
+Name: org/eclipse/jdt/internal/launching/VMListener.class
+SHA-256-Digest: xrvg9s/U+ooCLvNmBSunEcDqHr89mV5ggWg3jsWmMdg=
+
+Name: org/eclipse/jdt/internal/launching/environments/ExecutionEnviron
+ mentAnalyzer.class
+SHA-256-Digest: ISirhXclqwwhK9mE8TP9TtE//pbb4miXaAm58Schi04=
+
+Name: org/eclipse/jdt/launching/sourcelookup/IJavaSourceLocation.class
+SHA-256-Digest: WguYPU/hE6jvo6ohAS79JDjIcmaOT1/QM2ua+Ej/ONk=
+
+Name: org/eclipse/jdt/internal/launching/environments/DefaultAccessRul
+ eParticipant.class
+SHA-256-Digest: FQ31Ef3Y+e5MVA7ZsHWc6wDPiWvUGjK5iXLklikoEcE=
+
+Name: org/eclipse/jdt/internal/launching/JavaSourceLookupDirector.clas
+ s
+SHA-256-Digest: eegPHTK56jWwIPjLBjNkXSxKgUn7fUq/b1GTtYDrbZY=
+
+Name: org/eclipse/jdt/internal/launching/CompositeId.class
+SHA-256-Digest: QtpfZjZbpOdP67Cv+IR0AXmZ8CXwJf6mEz0/xPbt4aQ=
+
+Name: org/eclipse/jdt/launching/sourcelookup/containers/JavaProjectSou
+ rceContainer.class
+SHA-256-Digest: VAuUNTSwui8kl5INrF2dNvTqgiK0L07AP/vIjY9w/+E=
+
+Name: org/eclipse/jdt/launching/sourcelookup/containers/ClasspathVaria
+ bleSourceContainer.class
+SHA-256-Digest: jx2hS0bAteLLDb5uQn8bEHpGtwEwb4vIYD5soQFElLA=
+
+Name: org/eclipse/jdt/launching/VMRunnerConfiguration.class
+SHA-256-Digest: aM1Rw7p33QMaQJHPyghCDmIpTKpycygoX9RYRmTPFow=
+
+Name: org/eclipse/jdt/launching/AbstractVMRunner.class
+SHA-256-Digest: JfaKWgul03Vk3CPdz/W74/HSbQN4uYOoYAfnUJRFp3E=
+
+Name: org/eclipse/jdt/internal/launching/StandardVMType$1.class
+SHA-256-Digest: ysilQX/1DRbBRq2UPgB4er5EHuMcaFZGkrcIkZuiTL4=
+
+Name: .api_description
+SHA-256-Digest: D6NqNr6XyRAmSvAd4+VoeoO0TGLq4eINGs6YTit30M4=
+
+Name: org/eclipse/jdt/launching/SocketUtil.class
+SHA-256-Digest: 5JHT+rWhs3FLHOK3wMtGl8yKH5aMtLdS/4DvsKFVEvc=
+
+Name: org/eclipse/jdt/internal/launching/JREContainer$RuleEntry.class
+SHA-256-Digest: PSrHkOx6tro4/FnnwFRSdlZ5Wx+5IJL3WNIIBi2+Nbk=
+
+Name: org/eclipse/jdt/internal/launching/ProjectClasspathVariableResol
+ ver.class
+SHA-256-Digest: VhoCeXay25s9vDAwUndDTdjdNZF4Rbj7nYVINPvE4+c=
+
+Name: org/eclipse/jdt/launching/IVMRunner.class
+SHA-256-Digest: uWAKxXRl0Ax446PA2dI+qsxqwbYuKc/IlQEqxL0oHa0=
+
+Name: org/eclipse/jdt/internal/launching/StandardVMDebugger$ConnectRun
+ nable.class
+SHA-256-Digest: UwPTksTuMobhNiYJJLP6+rv6ueqQr32kB8DDjRMCXk0=
+
+Name: org/eclipse/jdt/internal/launching/LibraryInfo.class
+SHA-256-Digest: ToWTz5Cr5wo2Tx8M77ZX2HOJjmk1V1LdqNAgO34fYT8=
+
+Name: org/eclipse/jdt/internal/launching/VariableClasspathEntry.class
+SHA-256-Digest: yq22/a9s3eFtQbZoutP8x4zzOUQUeysLYHhFaDMIMEk=
+
+Name: org/eclipse/jdt/launching/IRuntimeContainerComparator.class
+SHA-256-Digest: 8yoZWXkQQk3yFep3t3Kj9gCtzjkSE9gXtqXAjNNqVnI=
+
+Name: org/eclipse/jdt/launching/StandardSourcePathProvider$UniqueList.
+ class
+SHA-256-Digest: ZpMBF/nkn140k6E4sCCEcD4EAGKUGYegToOW84JyI2I=
+
+Name: org/eclipse/jdt/launching/environments/CompatibleEnvironment.cla
+ ss
+SHA-256-Digest: N9LeTKyv4rhk1cW51N7BRqA654bA2I/80NlclPhJ5OU=
+
+Name: org/eclipse/jdt/internal/launching/LaunchingMessages.properties
+SHA-256-Digest: srIKGIE66ZPXwJ7Fm0wNET+EbZDUGM6YHupxHN8tObs=
+
+Name: org/eclipse/jdt/internal/launching/JavaFxLibraryResolver.class
+SHA-256-Digest: ZQ+Tamyddl45BhqUhtAotbue9WijCuoBtdCgOose/7c=
+
+Name: org/eclipse/jdt/launching/AbstractJavaLaunchConfigurationDelegat
+ e.class
+SHA-256-Digest: n0Q5QxCFcq/CfLiurzMz0mLbbXkbSA1z4wVeXpv+zA4=
+
+Name: org/eclipse/jdt/launching/IVMInstallChangedListener.class
+SHA-256-Digest: 0qQvy3bfzB6TD2Sgk90R2oRZLvba6kdNpmpKN7cA31Q=
+
+Name: org/eclipse/jdt/launching/environments/IExecutionEnvironmentAnal
+ yzerDelegate.class
+SHA-256-Digest: tnK98sl04zoat0APNXZFXfK289Z4rYzhTWV2NXiAJrI=
+
+Name: org/eclipse/jdt/launching/AbstractVMInstallType.class
+SHA-256-Digest: gG2bB8WeRwevuAhermN74ER4cKeh032KIs582pXdmB8=
+
+Name: org/eclipse/jdt/internal/launching/environments/EnvironmentMessa
+ ges.properties
+SHA-256-Digest: E+p7NOfYqEiX5WSm/GIrF4wxNO6UhrfO74911aTtgVU=
+
+Name: .options
+SHA-256-Digest: 3GPITVnYhgluqCVPrNv/L+HepwNv3zt6qukSqwu+MAA=
+
+Name: org/eclipse/jdt/internal/launching/StandardVMType.class
+SHA-256-Digest: /bHDL28BW2qRyV/naMl6WDObI+11Clu3CBUxTZ7GAn0=
+
+Name: org/eclipse/jdt/internal/launching/environments/Analyzer.class
+SHA-256-Digest: TNY3DVx9X/eqm7BuDMffHWYqSTUXGmIUBsG1z1RlmIQ=
+
+Name: org/eclipse/jdt/internal/launching/JREContainerInitializer.class
+SHA-256-Digest: d8vnAJ8V1Qo+wy3t9KWBwbQrfjb95Nrq9q75/mPb57k=
+
+Name: org/eclipse/jdt/launching/environments/IExecutionEnvironmentsMan
+ ager.class
+SHA-256-Digest: ewAqKS7mfgUWR6Hv3HbXzkwjQtqCHExuAX/tIU6U24A=
+
+Name: org/eclipse/jdt/internal/launching/SocketListenConnector.class
+SHA-256-Digest: SaBoRV3fUi+4dK0sbRIs7X41982SdzeWJ/CsQtIgsq4=
+
+Name: org/eclipse/jdt/launching/IVMInstall2.class
+SHA-256-Digest: z79lEYB8MP6t7KvBlsw4aNYiLWK/anByzruDCofi3dA=
+
+Name: org/eclipse/jdt/internal/launching/EECompilationParticipant.clas
+ s
+SHA-256-Digest: gNZ+NEW9L0nvLoREyQA1fVCGz7zeNskGwJcUq4Xf4KM=
+
+Name: org/eclipse/jdt/internal/launching/Standard11xVMRunner.class
+SHA-256-Digest: eYgW7JKB/zGWT33aex+/tPIEYO00i+cfScXshW8ZNzk=
+
+Name: org/eclipse/jdt/internal/launching/JavaLaunchableTester.class
+SHA-256-Digest: 3X3UKjluXXnlRsWH0znvPccGYDvpS4ypmFnUc4nHSaQ=
+
+Name: org/eclipse/jdt/internal/launching/JREContainer$RuleKey.class
+SHA-256-Digest: Rd4LYZmJakPbTfbLBhaLdeJpZR7kQgAKUyos6uv0nJs=
+
+Name: org/eclipse/jdt/internal/launching/environments/EnvironmentsMana
+ ger$1.class
+SHA-256-Digest: PtgT5vfmWBRbu01zcU8E8NyPuX6vZr1DITsdYSeAuvU=
+
+Name: org/eclipse/jdt/internal/launching/DefaultEntryResolver.class
+SHA-256-Digest: pTGhjeljmDn0gyVd/Ke+clanvejjqKhekxU/6ey2G6Q=
+
+Name: org/eclipse/jdt/launching/IRuntimeClasspathProvider.class
+SHA-256-Digest: SnVUc2FpPmUUcptEQyvkSmPydkh2IW/kN7z5GQbxyGA=
+
+Name: org/eclipse/jdt/launching/sourcelookup/ArchiveSourceLocation.cla
+ ss
+SHA-256-Digest: R7I0o6v5jUsJM+Sbs9ILt44Fde5pY+n9ItReymCZz0E=
+
+Name: org/eclipse/jdt/internal/launching/JREContainer.class
+SHA-256-Digest: wA9WL50vO1Kio+ftHPHxItit1/e69CaDTL3CLh0u3cY=
+
+Name: org/eclipse/jdt/internal/launching/EEVMType.class
+SHA-256-Digest: vWAfS3Xm58s37ez8KobZHtac+zkTS7r0+7cJR99SpD8=
+
+Name: org/eclipse/jdt/internal/launching/Standard11xVM.class
+SHA-256-Digest: hM5b9nsIw+3whbRlDxy50l0NuYaIiNE9ktFgv6Lllz4=
+
+Name: org/eclipse/jdt/launching/sourcelookup/containers/ClasspathConta
+ inerSourceContainer.class
+SHA-256-Digest: nKiLsG2rrZ3nASZZ5p6pIfl80b/Z0EvTo4QP7NsSqdI=
+
+Name: org/eclipse/jdt/launching/IVMInstall3.class
+SHA-256-Digest: KhZWvWo0oFC5fXh4GjO/6LlqFNKvWwWDwdL9yJXbU5U=
+
+Name: org/eclipse/jdt/launching/LibraryLocation.class
+SHA-256-Digest: cmCPh68fPb1IpWazR6oFofPDI3w1oF2L2iABZK666/I=
+
+Name: org/eclipse/jdt/internal/launching/SocketListenConnectorProcess$
+ 1.class
+SHA-256-Digest: J2ilklKB3zwasOIwNVE58eunbPAANwDfnAemVlK0W0w=
+
+Name: org/eclipse/jdt/internal/launching/LaunchingPlugin$VMChanges.cla
+ ss
+SHA-256-Digest: DZ/gmSZMonTFQNs4yEK4nUqhyE9Y0DjqShIH/S3yyYE=
+
+Name: org/eclipse/jdt/internal/launching/VariableClasspathResolver.cla
+ ss
+SHA-256-Digest: EFH/GG/tgItH8BdvV0IQ5ZoceYjySscvLMtW77WSPas=
+
+Name: org/eclipse/jdt/internal/launching/environments/EnvironmentMessa
+ ges.class
+SHA-256-Digest: VJQrNfnHT1k7zQoxpz2bSv/Brb4wa/cydUBSiI2eN48=
+
+Name: org/eclipse/jdt/internal/launching/JavaSourceLookupUtil.class
+SHA-256-Digest: ghwLvemx52nwVb7DCglhqxm9XXrdfBPFU2xt5bVIm14=
+
+Name: org/eclipse/jdt/internal/launching/LaunchingMessages.class
+SHA-256-Digest: pMFA4UMkebj/zFQ8tkNiHCeTIwK7lX25IVLhdIe3IOE=
+
+Name: org/eclipse/jdt/internal/launching/JRERuntimeClasspathEntryResol
+ ver.class
+SHA-256-Digest: b2QtvE1zO9zmJDQCm4ll99CMFGRuqcextNJGzdO+VYQ=
+
+Name: org/eclipse/jdt/launching/IVMConnector.class
+SHA-256-Digest: Y253FuP7/aP/jea6y6F4YadVYjftD1Yc3Ij6uijKPCU=
+
+Name: org/eclipse/jdt/launching/JavaRuntime.class
+SHA-256-Digest: cctOVf+07tlCqzBnfFP+1Gv97FgNrlLktdQuyGu36Hg=
+
+Name: org/eclipse/jdt/internal/launching/LaunchingPreferenceInitialize
+ r.class
+SHA-256-Digest: yPspp8/mQKO14q7BsY3HufJNASctdV8UTc6JffA0b0c=
+
+Name: org/eclipse/jdt/internal/launching/RuntimeClasspathProvider.clas
+ s
+SHA-256-Digest: Bz0p6PzLkOmkUU0YUSZPjw+X/e3IgxyvC6zq6SpelO4=
+
+Name: org/eclipse/jdt/launching/sourcelookup/containers/JavaSourceLook
+ upParticipant.class
+SHA-256-Digest: 70FjHe3j3fKUV+eWENjxT/e7apbwRD79WsCalEHl4oo=
+
+Name: org/eclipse/jdt/launching/IVMInstallType.class
+SHA-256-Digest: 0N6g8vDdGkA2DxaMM2E9ShdMUvR5b8cSUAnHNz2PR2Q=
+
+Name: org/eclipse/jdt/launching/ExecutionArguments.class
+SHA-256-Digest: YKNbWhxlORBK6qYvmkA5u/WGZk0uTQIwj9H5+Tgxrkk=
+
+Name: org/eclipse/jdt/launching/StandardSourcePathProvider.class
+SHA-256-Digest: kdXIWdJgGhqcmnnNMfdxAX390qV/CJTEENq9x6RcJE4=
+
+Name: org/eclipse/jdt/launching/sourcelookup/JavaSourceLocator.class
+SHA-256-Digest: vVVEXipmEI8D8x51ipEaRaSQVudzOClmdORKVGLrsZE=
+
+Name: org/eclipse/jdt/internal/launching/JREContainer$1.class
+SHA-256-Digest: cRKMO0npQ2buscRiiOWps1mQcv+GUxz7PG5uyprDKO4=
+
+Name: org/eclipse/jdt/internal/launching/JavaClasspathVariablesInitial
+ izer.class
+SHA-256-Digest: GOdJXRgfOamTpJO6tNTmPnsbgMkrCyuuEZd4plUgKuU=
+
+Name: org/eclipse/jdt/internal/launching/environments/AccessRulePartic
+ ipant.class
+SHA-256-Digest: jQWm8BBjil57e/+3H0KaQdRXsAzuv+RfQnVP3ypbzYY=
+
+Name: org/eclipse/jdt/internal/launching/SocketListenConnectorProcess$
+ WaitForConnectionJob.class
+SHA-256-Digest: odH1bZXoEq5vUZN0HGBH/VRN8/Vd0Mfm5+0hIKiO7KM=
+
+Name: org/eclipse/jdt/launching/sourcelookup/PackageFragmentRootSource
+ Location.class
+SHA-256-Digest: YJwtqk0EF+QxROmeU1GpVIDwh5/pSrhfuztnci9PvC0=
+
+Name: org/eclipse/jdt/internal/launching/MacInstalledJREs.class
+SHA-256-Digest: rMJ99saXIFbdjWinoYCzP1/rscy4Pz6+ob61u9HJ3Q8=
+
+Name: org/eclipse/jdt/internal/launching/StandardVMDebugger.class
+SHA-256-Digest: wyZdMBPVoCZWOLG6/fWTMXP7Rd5WgwFCgWIUVLDlzy4=
+
+Name: org/eclipse/jdt/internal/launching/StandardVM.class
+SHA-256-Digest: ysBECy0qeg4XKDLxLqzqNTfkxiGrbZGOpyVc0mjrUHU=
+
+Name: plugin.properties
+SHA-256-Digest: KyfZ4/6hRza42gJIi4r0dfjkOqNBu1g1svud+v6byww=
+
+Name: org/eclipse/jdt/launching/sourcelookup/ZipEntryStorage.class
+SHA-256-Digest: 7zi2TSDyeLGDVPmBx05kCZKWzYTOuq4qHtpCKw2y5ZE=
+
+Name: org/eclipse/jdt/internal/launching/ClasspathContainerSourceConta
+ inerTypeDelegate.class
+SHA-256-Digest: CfrdTWKk1hqJd6fNlINLc0zfrh3sBHM6J8dz+Ic9Nx0=
+
+Name: org/eclipse/jdt/launching/IRuntimeClasspathEntryResolver2.class
+SHA-256-Digest: Tk19POfDYI8MQZui2HEL06X27sFT9dSRTYXYsY87H+Y=
+
+Name: org/eclipse/jdt/internal/launching/RuntimeClasspathEntryResolver
+ .class
+SHA-256-Digest: nvoQ3dmxHltLuL31NCchlGaHUht662CnezXMkJaZS8w=
+
+Name: org/eclipse/jdt/internal/launching/StandardVMRunner.class
+SHA-256-Digest: /llluyH2LnSlb95cDBubpcMjUk1DEUexf0Ap4DYlYFI=
+
+Name: org/eclipse/jdt/launching/sourcelookup/LocalFileStorage.class
+SHA-256-Digest: cxfLLx5PCf3uoShVEpTzs3ir5dBGLx6vx6O0UuIQCuA=
+
+Name: org/eclipse/jdt/launching/IRuntimeClasspathEntryResolver.class
+SHA-256-Digest: 2OJwxg55GqAtdzu6nkrRlvzwYSGPOs444EhIZBNMl5s=
+
+Name: org/eclipse/jdt/internal/launching/JREPreferenceModifyListener.c
+ lass
+SHA-256-Digest: ffYpAxJ0vE8DDjHldApC/4STx4bx1/XHaKcTQ5zMA7Y=
+
+Name: org/eclipse/jdt/internal/launching/LaunchingPlugin$1.class
+SHA-256-Digest: 5Ow47jnAANtN/1DDSCfYdCgIbonR9VavT/PU0kc+il8=
+
+Name: org/eclipse/jdt/internal/launching/PListParser.class
+SHA-256-Digest: ixsfAAQqNoWD5AUyJIRNa52n/JYt88MiMs+RVZEiURI=
+
+Name: org/eclipse/jdt/internal/launching/SocketAttachConnector.class
+SHA-256-Digest: vxOQrwyPP+8Uw4MN/7CwMwlysAGC+EOFcWo3bVU5yCw=
+
+Name: org/eclipse/jdt/launching/sourcelookup/containers/PackageFragmen
+ tRootSourceContainer.class
+SHA-256-Digest: wJYCxFw0Na2ZkBwBlpG9FdzlAVuvMBt8lnMH9XD/lUM=
+
+Name: lib/launchingsupport.jar
+SHA-256-Digest: Xx67OXIHgWlkYtB/UGpkPMmJB3OesE5BY2UeEDOuNv4=
+
+Name: org/eclipse/jdt/internal/launching/ClasspathVariableSourceContai
+ nerTypeDelegate.class
+SHA-256-Digest: eZdySVBNwp8UDPmib+qcEmLLKVghjRvdcQHsq3qbsUg=
+
+Name: org/eclipse/jdt/launching/sourcelookup/JavaProjectSourceLocation
+ .class
+SHA-256-Digest: BoNxp9SJH53H2BtPg65LIwqrJYRl55pAuuW4EaRYyqI=
+
+Name: org/eclipse/jdt/launching/sourcelookup/DirectorySourceLocation.c
+ lass
+SHA-256-Digest: /hDUYD2L/VWVTtt/pp5olr8kRtl81q64sObAQJYNC3c=
+
+Name: org/eclipse/jdt/internal/launching/JavaAppletLaunchConfiguration
+ Delegate.class
+SHA-256-Digest: pErbWEJawg4srqpq5bptIorUFk8MCCGk0V5tAZrzGt4=
+
+Name: org/eclipse/jdt/internal/launching/LaunchingPlugin$JREUpdateJob.
+ class
+SHA-256-Digest: VACnF3B+U+mBmZUYQ17EyZs/DBnfnQz9kd3jzupzkBI=
+
+Name: org/eclipse/jdt/launching/ILibraryLocationResolver.class
+SHA-256-Digest: dVb5XK26ty2jeFxYOvCaCnniwcO2CPzXQSnbpOv6GmQ=
+
+Name: org/eclipse/jdt/launching/IRuntimeClasspathEntry2.class
+SHA-256-Digest: Eoz5lzrDzW/C4WGPoB3wDGhtMNzoTz8PuH1dMM7slT0=
+
+Name: org/eclipse/jdt/launching/AbstractVMInstall.class
+SHA-256-Digest: RO7rr64vXmP/sPc6LleOnstYK4sG20Rm1HBDtaXGnP8=
+
+Name: org/eclipse/jdt/internal/launching/environments/ExecutionEnviron
+ ment$1.class
+SHA-256-Digest: 9LkH64jZPLSujnq95q+484zXDgu0S+HYfFo98DCfScU=
+
+Name: org/eclipse/jdt/internal/launching/environments/ExecutionEnviron
+ mentVariableResolver.class
+SHA-256-Digest: E7RukF7DFihr+xxo1iM/PYBlh/bDmxx9+FQ7Qz0irEE=
+
+Name: org/eclipse/jdt/launching/IJavaLaunchConfigurationConstants.clas
+ s
+SHA-256-Digest: Y2KIcsLPz+3J0V5FsD854tyTjTGCmsP9vAl55dDly9U=
+
+Name: org/eclipse/jdt/internal/launching/SocketListenConnectorProcess.
+ class
+SHA-256-Digest: CPyx315uBcJIp/qh+Y9HZNFKeX8sE2LIgh3Z8KWfsS4=
+
+Name: org/eclipse/jdt/internal/launching/LaunchingPlugin.class
+SHA-256-Digest: WXANOhj4c2sgdojc7EwSUcB6mEtH/HM7lB7li2LNyfs=
+
+Name: org/eclipse/jdt/launching/environments/ExecutionEnvironmentDescr
+ iption.class
+SHA-256-Digest: 7ihO5nDCnr/OTqUItvDCjehztfbLf8h175YcEaeMaDM=
+
+Name: org/eclipse/jdt/internal/launching/EEVMInstall.class
+SHA-256-Digest: iqPPlHOGjyBiYv45T+wB/GwG7AkzIQfs01Xhi65G/h4=
+
+Name: org/eclipse/jdt/launching/PropertyChangeEvent.class
+SHA-256-Digest: 7PJJMgBs/U7UrXzyd8wi3qjmjw2+t52M0Gb/indGITY=
+
+Name: org/eclipse/jdt/internal/launching/LaunchingPlugin$VMChanges$1.c
+ lass
+SHA-256-Digest: jZR6Cdihph0VYwmOn0ZfWar6EhtcQ3BOk6lNMJuNXh4=
+
+Name: org/eclipse/jdt/internal/launching/RuntimeClasspathEntryListComp
+ arator.class
+SHA-256-Digest: 9v7B5URP2yJ9P4WL0Xu3p98fi8frrm6UniU2r3Gz4MQ=
+
+Name: org/eclipse/jdt/launching/StandardClasspathProvider.class
+SHA-256-Digest: kN4F6wr07YXjVWwJU0rObjEBiQzgFq40d4wrb2J+Wu0=
+
+Name: java.policy.applet
+SHA-256-Digest: /9G3mRUUPX4EUlM18c2sQoMMAXEPR4g/y6KelaeRiqA=
+
+Name: org/eclipse/jdt/launching/JavaLaunchDelegate.class
+SHA-256-Digest: VwZh108bBc2hzGPfetuCc4/AHuK7VNlx+smAFENqiu8=
+
+Name: org/eclipse/jdt/launching/sourcelookup/containers/JavaSourcePath
+ Computer.class
+SHA-256-Digest: Lej/LHXIelPhwWKEaqOcY7rZIBQEI7qzlJoVDz+JN2k=
+
+Name: org/eclipse/jdt/internal/launching/StandardVMType$2.class
+SHA-256-Digest: BwYUQe+L9iFsEFttK+gsQvH0pKEcBoV4xEwgyE/hQak=
+
+Name: about.html
+SHA-256-Digest: 0RM1x9lTJa7T8YkysaegPuBIeaEvSZypRDfXoMpsJAU=
+
+Name: org/eclipse/jdt/launching/IRuntimeClasspathEntry.class
+SHA-256-Digest: M+gnjcqhcuVypwpKKj/RDZQ3E1BO/1bJN87NB2kTqls=
+
+Name: org/eclipse/jdt/launching/VMStandin.class
+SHA-256-Digest: EuzKBcW8lLjgDk1mg9B8Wvvrtf02XQyjZ0CQ3OxQHWY=
+
+Name: org/eclipse/jdt/internal/launching/JREPreferenceModifyListener$V
+ isitor.class
+SHA-256-Digest: cOOH8ChAioNiN9hdvJc/qL/fOXYpbYUX2oP5ahoSshk=
+
+Name: org/eclipse/jdt/internal/launching/JavaMigrationDelegate.class
+SHA-256-Digest: QTABQ6/+QqJSLAM0aySEPmCWnrOjTRRooOlsL5u7Zpg=
+
+Name: org/eclipse/jdt/launching/IVMInstall.class
+SHA-256-Digest: W5QP3pbZ+tFCxIXc53llOdKUTkb+SNYMB0Q5dgZT0Xo=
+
+Name: org/eclipse/jdt/launching/environments/IAccessRuleParticipant.cl
+ ass
+SHA-256-Digest: p01KO8hN4mtiqb/1AbNjrewK6A7IobxZ0hN7JWALDU8=
+
+Name: org/eclipse/jdt/internal/launching/environments/EnvironmentsMana
+ ger.class
+SHA-256-Digest: j0wZ3ufUBbd5sUuW4GMruYjc6/TWxb4MbvUuRrys42U=
+
+Name: org/eclipse/jdt/internal/launching/JavaProjectSourceContainerTyp
+ eDelegate.class
+SHA-256-Digest: pWZ4cgZPrWeIraMgOzNfKjqONcsiooyrspZaKfrzjrY=
+
+Name: org/eclipse/jdt/internal/launching/MacInstalledJREs$MacVMStandin
+ .class
+SHA-256-Digest: b5oS3bc9sztym1wx7tR6P4R3jTjhZ/KHvKNJ/MxTqNs=
+
+Name: org/eclipse/jdt/internal/launching/VMDefinitionsContainer.class
+SHA-256-Digest: Y4chbyDwJpr14ObhLX2vieR1HGoKEJWvijjFqX7Z3vo=
+
+Name: org/eclipse/jdt/internal/launching/RuntimeClasspathEntry.class
+SHA-256-Digest: i/sBaQPMw3JvCU2myY0h0Kk0GcQlMa52KESLla+vLhE=
+
