@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="JDTPatch" url="https://raw.githubusercontent.com/kumattau/JDTPatch/master/update">
+      JDTPatch
+   </description>
+   <feature url="features/com.github.kumattau.jdt.patch_4.5.2.xx-v20160403-0014.jar" id="com.github.kumattau.jdt.patch" version="4.5.2.xx-v20160403-0014" patch="true">
+      <category name="jdt"/>
+   </feature>
+   <category-def name="jdt" label="JDT"/>
+</site>
