@@ -517,6 +517,12 @@ public class JavadocContentAccess2 {
 	 * @throws CoreException is thrown when the element's Javadoc cannot be accessed
 	 */
 	public static String getHTMLContent(IJavaElement element, boolean useAttachedJavadoc) throws CoreException {
+
+		String attachedJavadoc = element.getAttachedJavadoc(null);
+		if (attachedJavadoc != null) {
+			return attachedJavadoc;
+		}
+
 		if (element instanceof IPackageFragment) {
 			return getHTMLContent((IPackageFragment) element);
 		}

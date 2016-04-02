@@ -1,2 +1,2 @@
 # JDTPatch
-JDT Patch
+JDT Patch for Japanese Language Support
